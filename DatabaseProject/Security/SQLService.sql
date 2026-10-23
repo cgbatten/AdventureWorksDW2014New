@@ -1,0 +1,2 @@
+﻿CREATE USER [SQLService] FOR LOGIN [SQLService];
+

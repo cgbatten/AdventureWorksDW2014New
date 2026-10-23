@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SQLService]
+    WITH PASSWORD = N'e{wpmeYqiMw#pvjaboafh|qlmsFT7_&#$!~<E}idoqap.?mi', SID = 0xF0B5E508DEFBDB47A11CD3E26C39E145, DEFAULT_DATABASE = [AdventureWorksDW2014], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

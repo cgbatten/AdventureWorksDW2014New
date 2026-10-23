@@ -1,0 +1,87 @@
+23/10/2026 09:19:08	This log contains information about the import schema operation into project 'DatabaseProject' on computer 'WORKSTATION' by user 'Chris'.
+23/10/2026 09:19:09	Import of database schema has started.
+23/10/2026 09:19:15	Gathering database credentials
+23/10/2026 09:19:15	Gathering database options
+23/10/2026 09:19:15	Gathering generic database scoped configuration option
+23/10/2026 09:19:15	Gathering users
+23/10/2026 09:19:15	Gathering roles
+23/10/2026 09:19:15	Gathering application roles
+23/10/2026 09:19:15	Gathering role memberships
+23/10/2026 09:19:15	Gathering filegroups
+23/10/2026 09:19:15	Gathering full-text catalogs
+23/10/2026 09:19:15	Gathering assemblies
+23/10/2026 09:19:15	Gathering certificates
+23/10/2026 09:19:15	Gathering asymmetric keys
+23/10/2026 09:19:15	Gathering symmetric keys
+23/10/2026 09:19:15	Gathering encrypted symmetric keys
+23/10/2026 09:19:15	Gathering schemas
+23/10/2026 09:19:15	Gathering XML schema collections
+23/10/2026 09:19:15	Gathering user-defined data types
+23/10/2026 09:19:15	Gathering user-defined types
+23/10/2026 09:19:15	Gathering table types
+23/10/2026 09:19:15	Gathering unique keys for table types
+23/10/2026 09:19:15	Gathering primary keys for table types
+23/10/2026 09:19:15	Gathering indexes for table types
+23/10/2026 09:19:15	Gathering check constraints for table types
+23/10/2026 09:19:15	Gathering default constraints for table types
+23/10/2026 09:19:15	Gathering partition functions
+23/10/2026 09:19:15	Gathering partition schemes
+23/10/2026 09:19:15	Gathering functions
+23/10/2026 09:19:15	Gathering encrypted functions
+23/10/2026 09:19:15	Gathering aggregates
+23/10/2026 09:19:15	Gathering procedures
+23/10/2026 09:19:15	Gathering encrypted procedures
+23/10/2026 09:19:16	Gathering tables
+23/10/2026 09:19:16	Gathering primary keys
+23/10/2026 09:19:16	Gathering unique constraints
+23/10/2026 09:19:16	Gathering foreign keys
+23/10/2026 09:19:16	Gathering default constraints
+23/10/2026 09:19:16	Gathering check constraints
+23/10/2026 09:19:16	Gathering views
+23/10/2026 09:19:16	Gathering encrypted views
+23/10/2026 09:19:16	Gathering indexes
+23/10/2026 09:19:16	Gathering statistics
+23/10/2026 09:19:16	Gathering full-text index stoplists
+23/10/2026 09:19:16	Gathering search property lists
+23/10/2026 09:19:16	Gathering search properties
+23/10/2026 09:19:16	Gathering full-text indexes
+23/10/2026 09:19:16	Gathering column store indexes
+23/10/2026 09:19:16	Gathering spatial indexes
+23/10/2026 09:19:16	Gathering XML indexes
+23/10/2026 09:19:16	Gathering Selective XML indexes
+23/10/2026 09:19:16	Gathering encrypted triggers
+23/10/2026 09:19:16	Gathering triggers
+23/10/2026 09:19:16	Gathering encrypted and clr ddl triggers
+23/10/2026 09:19:16	Gathering ddl triggers
+23/10/2026 09:19:16	Creating edge constraints
+23/10/2026 09:19:16	Gathering synonyms
+23/10/2026 09:19:16	Gathering defaults
+23/10/2026 09:19:16	Gathering data constraint uddt bindings
+23/10/2026 09:19:16	Gathering rules
+23/10/2026 09:19:16	Gathering data constraint uddt bindings
+23/10/2026 09:19:16	Gathering message types
+23/10/2026 09:19:16	Gathering queues
+23/10/2026 09:19:16	Gathering contracts
+23/10/2026 09:19:16	Gathering services
+23/10/2026 09:19:16	Gathering event notifications
+23/10/2026 09:19:16	Gathering remote service bindings
+23/10/2026 09:19:16	Gathering broker priorities
+23/10/2026 09:19:16	Gathering signatures
+23/10/2026 09:19:16	Gathering compression options
+23/10/2026 09:19:16	Gathering sequence types
+23/10/2026 09:19:16	Gathering security policies
+23/10/2026 09:19:16	Gather column encryption keys
+23/10/2026 09:19:16	Gathering column master keys
+23/10/2026 09:19:16	Gathering external data sources
+23/10/2026 09:19:16	Gathering external file formats
+23/10/2026 09:19:16	Gathering external tables
+23/10/2026 09:19:16	Gathering extended properties
+23/10/2026 09:19:16	Gathering assemblies
+23/10/2026 09:19:16	Gathering credentials
+23/10/2026 09:19:16	Gathering logins
+23/10/2026 09:19:16	Gathering server audits
+23/10/2026 09:19:17	Scanning project for duplicate elements
+23/10/2026 09:19:17	Finished duplicate element processing
+23/10/2026 09:19:19	Finished importing database.
+23/10/2026 09:19:19	A summary of the import was saved to the following location: C:\Users\Chris\OneDrive\OneNote\Repo\DatabaseProject\DatabaseProject\Import Schema Logs\DatabaseProject_20261023081908.log
+23/10/2026 09:19:19	Click Finish to continue...

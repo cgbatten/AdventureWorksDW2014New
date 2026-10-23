@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DatabaseProject</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{fcb5b1f2-af82-438d-ae1f-6080da1654c8}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DatabaseProject</RootNamespace>
+    <AssemblyName>DatabaseProject</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Security\" />
+    <Folder Include="Database Triggers\" />
+    <Folder Include="Views" />
+    <Folder Include="Tables" />
+    <Folder Include="Functions" />
+    <Folder Include="Views\dbo" />
+    <Folder Include="Tables\dbo" />
+    <Folder Include="Functions\dbo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\SQLService.sql" />
+    <Build Include="Security\SQLService_1.sql" />
+    <Build Include="Security\WORKSTATION_SQLService.sql" />
+    <Build Include="Security\WORKSTATION_SQLService_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="Database Triggers\ddlDatabaseTriggerLog.sql" />
+    <Build Include="Views\dbo\vTimeSeries.sql" />
+    <Build Include="Views\dbo\vTargetMail.sql" />
+    <Build Include="Views\dbo\vDMPrep.sql" />
+    <Build Include="Views\dbo\vAssocSeqOrders.sql" />
+    <Build Include="Views\dbo\vAssocSeqLineItems.sql" />
+    <Build Include="Tables\dbo\AdventureWorksDWBuildVersion.sql" />
+    <Build Include="Tables\dbo\DatabaseLog.sql" />
+    <Build Include="Tables\dbo\DimAccount.sql" />
+    <Build Include="Tables\dbo\DimCurrency.sql" />
+    <Build Include="Tables\dbo\DimCustomer.sql" />
+    <Build Include="Tables\dbo\DimDate.sql" />
+    <Build Include="Tables\dbo\DimDepartmentGroup.sql" />
+    <Build Include="Tables\dbo\DimEmployee.sql" />
+    <Build Include="Tables\dbo\DimGeography.sql" />
+    <Build Include="Tables\dbo\DimOrganization.sql" />
+    <Build Include="Tables\dbo\DimProduct.sql" />
+    <Build Include="Tables\dbo\DimProductCategory.sql" />
+    <Build Include="Tables\dbo\DimProductSubcategory.sql" />
+    <Build Include="Tables\dbo\DimPromotion.sql" />
+    <Build Include="Tables\dbo\DimReseller.sql" />
+    <Build Include="Tables\dbo\DimSalesReason.sql" />
+    <Build Include="Tables\dbo\DimSalesTerritory.sql" />
+    <Build Include="Tables\dbo\DimScenario.sql" />
+    <Build Include="Tables\dbo\FactAdditionalInternationalProductDescription.sql" />
+    <Build Include="Tables\dbo\FactCallCenter.sql" />
+    <Build Include="Tables\dbo\FactCurrencyRate.sql" />
+    <Build Include="Tables\dbo\FactFinance.sql" />
+    <Build Include="Tables\dbo\FactInternetSales.sql" />
+    <Build Include="Tables\dbo\FactInternetSalesReason.sql" />
+    <Build Include="Tables\dbo\FactProductInventory.sql" />
+    <Build Include="Tables\dbo\FactResellerSales.sql" />
+    <Build Include="Tables\dbo\FactSalesQuota.sql" />
+    <Build Include="Tables\dbo\FactSurveyResponse.sql" />
+    <Build Include="Tables\dbo\NewFactCurrencyRate.sql" />
+    <Build Include="Tables\dbo\ProspectiveBuyer.sql" />
+    <Build Include="Functions\dbo\udfTwoDigitZeroFill.sql" />
+    <Build Include="Functions\dbo\udfMinimumDate.sql" />
+    <Build Include="Functions\dbo\udfBuildISO8601Date.sql" />
+  </ItemGroup>
+</Project>
